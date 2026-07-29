@@ -1,0 +1,185 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#111827;
+  color:white;
+}
+
+/* Navbar */
+
+nav{
+  background:#0f172a;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  color:#a855f7;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:#a855f7;
+}
+
+.login-btn,
+.btn{
+  background:#a855f7;
+  color:white;
+  border:none;
+  padding:12px 25px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.login-btn:hover,
+.btn:hover{
+  background:#9333ea;
+}
+
+/* Hero */
+
+.hero{
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero-img{
+    width:700px;
+    max-width:90%;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero h1{
+  font-size:55px;
+  margin-top:30px;
+}
+
+.hero p{
+  margin:20px 0;
+  font-size:20px;
+  color:#d1d5db;
+}
+
+/* Sections */
+
+section{
+  padding:60px 20px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* Services */
+
+.services{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.service-card{
+  background:#1f2937;
+  width:280px;
+  padding:30px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-10px);
+}
+
+.service-card h3{
+  color:#a855f7;
+  margin-bottom:15px;
+}
+
+/* About */
+
+#about{
+  text-align:center;
+}
+
+#about p{
+  max-width:800px;
+  margin:auto;
+  color:#d1d5db;
+}
+
+/* Footer */
+
+footer{
+  background:#0f172a;
+  text-align:center;
+  padding:30px;
+  margin-top:50px;
+}
+
+footer p{
+  margin:10px 0;
+  color:#d1d5db;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  nav ul{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:35px;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
